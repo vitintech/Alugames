@@ -8,6 +8,7 @@ function alterarStatus(id) {
         imagem.classList.remove("dashboard__item__img--rented");
         botao.classList.remove("dashboard__item__button--return");
         botao.textContent = "Alugar";
+        prompt(`Confirme sua devolução para o jogo: ${nome.textContent}`);
     } else {
         imagem.classList.add("dashboard__item__img--rented");
         botao.classList.add("dashboard__item__button--return");
