@@ -1,0 +1,13 @@
+function alterarStatus(id) {
+    let Gameclicado = document.getElementById(`game-${id}`);
+    let imagem = Gameclicado.querySelector(".dashboard__item__img");
+    let botao = Gameclicado.querySelector(".dashboard__item__button");
+    let nome = Gameclicado.querySelector(".dashboard__item__name");
+
+    alert(nome.textContent);
+
+    if (imagem.classList.contains("dashboard__item__img--rented")) {
+        imagem.classList.remove("dashboard__item__img--rented");
+        botap.classList.remove("dashboard__item__button--return");
+    }
+}
