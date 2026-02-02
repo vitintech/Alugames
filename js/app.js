@@ -1,3 +1,5 @@
+let alugados = 0;
+
 function alterarStatus(id) {
     let Gameclicado = document.getElementById(`game-${id}`);
     let imagem = Gameclicado.querySelector(".dashboard__item__img");
@@ -13,5 +15,7 @@ function alterarStatus(id) {
         imagem.classList.add("dashboard__item__img--rented");
         botao.classList.add("dashboard__item__button--return");
         botao.textContent = "Devolver";
+        alugados++;
     }
+    console.log(`Jogos alugados: ${alugados}`);
 }
